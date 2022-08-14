@@ -1,5 +1,5 @@
-Krystibash v0.01
-Requires: shuf
+Krystibash v0.01<br/>
+Requires: shuf<br/>
 Recommend: BlexMono Nerd Font Text
 Features:
 * Emotional Bash Prompt - Faces will react to exit codes
@@ -9,15 +9,15 @@ Features:
 * Completely random theme or 11 presets
 * Save and load a theme
 * Install to ~/.bashrc
-
+<br/><br/>
 This will set you up with either a random prompt with a little wiggle on some randomized features. There is also a bunch of more specific themes to choose from.
+<br/><br/>
 
-
-Parameters: (Required) [Optional]
-. ./krysti.sh colors
-. ./krysti.sh setup (kandi/mid/fire/lime/purples/reds/greens/browns/yellows/oranges/blues)
-. ./krysti.sh emo (on/off)
-. ./krysti.sh random [num]
-. ./krysti.sh last
-. ./krysti.sh save
-. ./krysti.sh bashrc
+Parameters: (Required) [Optional]<br/>
+. ./krysti.sh colors<br/>
+. ./krysti.sh setup (kandi/mid/fire/lime/purples/reds/greens/browns/yellows/oranges/blues)<br/>
+. ./krysti.sh emo (on/off)<br/>
+. ./krysti.sh random [num]<br/>
+. ./krysti.sh last<br/>
+. ./krysti.sh save<br/>
+. ./krysti.sh bashrc<br/>
