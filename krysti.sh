@@ -295,7 +295,7 @@ case $1 in
 		echo ". `pwd`/krysti.sh last" >> ~/.bashrc
 	;;
 	*)
-		source_load
+		#source_load
 		krysti_rainbow "Krysti.sh Help (Emotion: ${emo})"
 		echo $(tput sgr0)
 		#echo -e ${reset}
