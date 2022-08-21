@@ -1,6 +1,6 @@
 Krystibash v0.01<br/>
 Requires: shuf<br/>
-Recommend: BlexMono Nerd Font Text
+Recommend: BlexMono Nerd Font Text<br />
 Features:
 * Emotional Bash Prompt - Faces will react to exit codes
 * Basic count of directories, files and links. Disabled if $COLUMNS are below 60.
