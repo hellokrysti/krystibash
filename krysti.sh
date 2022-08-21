@@ -186,7 +186,7 @@ krysti_is_remote() {
 		return 0
 	fi
 	is_remote=$(mount | grep "_netdev" | awk '{print $3}' | sed 's\'$HOME'\~\')
-	if grep -q "$kcwd" <<< "$is_remote"; then
+	if grep -q "$is_remote" <<< "$kcwd"; then
 		echo -n " "
 	elif test -d "./node_modules"; then
 		echo -n " "
