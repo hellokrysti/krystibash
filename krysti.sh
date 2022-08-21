@@ -218,12 +218,6 @@ parse_git_branch ()
   color=""  
   if git rev-parse --git-dir >/dev/null 2>&1
   then
-    if git diff --quiet 2>/dev/null >&2 
-    then
-      color="${OKCOLOR}"
-    else
-      color="${RED}"
-    fi
     gwt=$(git rev-parse --is-inside-work-tree)
     if [[ "$gwt" != "false" ]]; then
     gcwd=`pwd`
