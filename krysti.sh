@@ -221,7 +221,7 @@ parse_git_branch ()
     gwt=$(git rev-parse --is-inside-work-tree)
     if [[ "$gwt" != "false" ]]; then
     gcwd=`pwd`
-    gitb="$(git branch 2>/dev/null | grep '^*' | colrm 1 2)"
+    gitb="$(git branch 2>/dev/null | grep '^*' | awk '{print $2}')"
     gits=$(git status -s 2>&1 | wc -l)
     gitu=$( git ls-files --others --exclude-standard $(git rev-parse --show-cdup) | wc -l )
     fi
