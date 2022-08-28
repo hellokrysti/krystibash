@@ -180,12 +180,12 @@ krysti_cwd_files() {
 	krysti_rainbow "$(krysti_is_remote) ${filestat}"
 }
 krysti_is_remote() {
-	kcwd=$(pwd | sed 's\'$HOME'\~\')
+	kcwd="${$(pwd)/#$HOME/~}"
 	if [[ "$kcwd" == "~" ]]; then
 		echo -n " "
 		return 0
 	fi
-	is_remote=$(mount | grep "_netdev" | awk '{print $3}' | sed 's\'$HOME'\~\')
+	is_remote=$(mount | grep "_netdev" | awk '{print $3}' | sed "s;$HOME;~;")
 	if grep -q "$is_remote" <<< "$kcwd"; then
 		echo -n " "
 	elif test -d "./node_modules"; then
