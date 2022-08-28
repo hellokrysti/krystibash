@@ -1,5 +1,5 @@
 Krystibash v0.01<br/>
-Requires: shuf<br/>
+Requires: shuf, GNU findutils<br/>
 Recommend: BlexMono Nerd Font Text<br />
 Features:
 * Emotional Bash Prompt - Faces will react to exit codes
