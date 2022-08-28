@@ -8,7 +8,7 @@ Features:
 * GitHub branch w/ differences and changes awareness
 * Completely random theme or 11 presets
 * Save and load a theme
-* Install to ~/.bashrc
+* Install to ~/.bashrc (May need to change to ~/.profile if it doesn't load)
 <br/><br/>
 This will set you up with either a random prompt with a little wiggle on some randomized features. There is also a bunch of more specific themes to choose from.
 <br/><br/>

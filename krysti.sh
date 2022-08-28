@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Requires 'shuf' command
+# Requires 'shuf' command, GNU Findutils
 krysti_return_face() {
 	if [ -z ${emo+x} ]; then
 		emo="off"
