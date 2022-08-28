@@ -180,7 +180,7 @@ krysti_cwd_files() {
 	krysti_rainbow "$(krysti_is_remote) ${filestat}"
 }
 krysti_is_remote() {
-	kcwd="${$(pwd)/#$HOME/~}"
+	kcwd="$(pwd | sed "s;$HOME;~;")"
 	if [[ "$kcwd" == "~" ]]; then
 		echo -n " "
 		return 0
